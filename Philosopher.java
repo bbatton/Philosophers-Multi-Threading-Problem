@@ -4,9 +4,9 @@ import java.util.concurrent.Semaphore;
 public class Philosopher implements Runnable {
 		
 	//Sets all Philosopher Object class variables
-	/*volatile*/ int id, think;
-	/*volatile*/ boolean running = true;
-	/*volatile*/ Semaphore leftFork, rightFork;
+	volatile int id, think;
+	volatile boolean running = true;
+	Semaphore leftFork, rightFork;
 	private static String status;
 	Random random = new Random();
 	
